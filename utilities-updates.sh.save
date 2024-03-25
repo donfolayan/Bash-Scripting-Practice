@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+#Update, Upgrade Utilities to latest version and remove outdated utilities
+
+apt-get update -y
+apt-get upgrade -y
+apt-get remove -y
+
+#Usage: Ensure to run as root user or use sudo keyword
+#You can set a cronjob for this to run at reboot by copying the directory with pwdmoving
+#over to superuser and using crontab -e 
